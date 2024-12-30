@@ -50,7 +50,7 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 
 
 
-module up_coumter(out,clk,rst);
+module upcount(out,clk,rst);
 
 input clk,rst;
 
@@ -62,12 +62,13 @@ begin
 
 if(rst)
 
+ out<=0;
 else
 
+ out <= out+1;
 end
 
 endmodule
-
 
 Developed by: RegisterNumber:
 */
@@ -79,8 +80,8 @@ Developed by: RegisterNumber:
 
 **TIMING DIAGRAM FOR IP COUNTER**
 
+![image](https://github.com/user-attachments/assets/c83ecc22-6661-4cce-b618-c4de6725c248)
 
-![Screenshot 2024-12-21 103108](https://github.com/user-attachments/assets/bcc76a8d-8c50-4cff-963b-4c7d0118e722)
 
 
 
